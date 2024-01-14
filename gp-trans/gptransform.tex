@@ -96,13 +96,13 @@
 \maketitle
 General form of GP
 \begin{align}
-	x\brak{n}&=x\brak{0}r^n
+	x\brak{n}&=x\brak{0}r^n \quad n\geq 0
 \end{align}
-Sum of first $n+1$ terms of a geometric progression is defined as
+Sum of first $n$ terms of a geometric progression is defined as
 \begin{align}
-	y\brak{n+1} &= \sum_{k=0} ^{n} x\brak{k} \\
-	y\brak{n+1} &= \sum_{k=-\infty} ^{\infty} x\brak{k} u\brak{n-k}\\
-	y\brak{n+1} &= x\brak{n} *u\brak{n}
+	y\brak{n} &= \sum_{k=0} ^{n} x\brak{k} \\
+	y\brak{n} &= \sum_{k=-\infty} ^{\infty} x\brak{k} u\brak{n-k}\\
+	y\brak{n} &= x\brak{n} *u\brak{n}
 \end{align} 
 On Taking Z-Transform 
 \begin{align}
@@ -125,12 +125,8 @@ By using Partial Fractions
 \end{align}
 Taking inverse Z-transform 
 \begin{align}
-	y\brak{n+1}&=\frac{x\brak{0}}{r-1}\brak{r\brak{r^n}-1}u\brak{n}\\
+	y\brak{n}&=\frac{x\brak{0}}{r-1}\brak{r\brak{r^n}-1}u\brak{n}\\
 	&=x\brak{0}\brak{\frac{r^{n+1}-1}{r-1}}u\brak{n}
 \end{align}
-for Sum of n terms $y\brak{n}$ substitute $n+1$ to $n$
-\begin{align}
-	y\brak{n} &= x\brak{0}\brak{\frac{r^n-1}{r-1}} u\brak{n-1}\\
-	&=x\brak{0}\brak{\frac{r^n-1}{r-1}} \quad n>0
-\end{align}
+
 \end{document}
