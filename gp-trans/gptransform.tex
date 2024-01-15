@@ -96,21 +96,25 @@
 \maketitle
 General form of GP
 \begin{align}
-	x\brak{n}&=x\brak{0}r^n \quad n\geq 0
+	x\brak{n}&=x\brak{0}r^n u\brak{n} \label{eq:appendixGPGeneralform}
 \end{align}
-Sum of first $n$ terms of a geometric progression is defined as
+Let 
 \begin{align}
-	y\brak{n} &= \sum_{k=0} ^{n} x\brak{k} \\
-	y\brak{n} &= \sum_{k=-\infty} ^{\infty} x\brak{k} u\brak{n-k}\\
-	y\brak{n} &= x\brak{n} *u\brak{n}
-\end{align} 
-On Taking Z-Transform 
+	y\brak{n} &=x\brak{n} * u\brak{n} \label{eq:convolutionSum}\\
+	&=\sum _{k=-\infty}^{\infty} x\brak{k} u\brak{n-k}
+\end{align}
+on substituting \eqref{eq:appendixGPGeneralform} in The convolution sum 
+\begin{align}
+	y\brak{n} &= \sum_{k=-\infty}^{\infty} x\brak{0}r^n u\brak{n} u\brak{n-k}\\
+	&= \sum _{k=0}^{n} x\brak{0} r^n
+\end{align}
+Which gives us sum of GP, So On Taking Z-Transform on \eqref{eq:convolutionSum}
 \begin{align}
 	Y\brak{z}&= X\brak{z} U\brak{z}
 \end{align}
-From Z-Transform of a term of GP 
+From Z-Transform of a term in GP 
 \begin{align}
-	X\brak{z}&=	\frac{x\brak{0}}{1-rz^{-1}} \quad \abs{rz^{-1}}<1
+	X\brak{z}&=	\frac{x\brak{0}}{1-rz^{-1}}  \label{eq:GPTransform} \quad \abs{rz^{-1}}<1
 \end{align}
 and Z-Transform of unit step is 
 \begin{align}
@@ -123,7 +127,7 @@ By using Partial Fractions
 	A&=\frac{r}{r-1}\\
 	B&= \frac{-1}{r-1}
 \end{align}
-Taking inverse Z-transform 
+Using \eqref{eq:GPTransform} and Taking inverse Z-transform 
 \begin{align}
 	y\brak{n}&=\frac{x\brak{0}}{r-1}\brak{r\brak{r^n}-1}u\brak{n}\\
 	&=x\brak{0}\brak{\frac{r^{n+1}-1}{r-1}}u\brak{n}
