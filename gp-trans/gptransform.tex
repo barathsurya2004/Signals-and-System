@@ -114,12 +114,12 @@ Which gives us sum of GP, So On Taking Z-Transform on \eqref{eq:convolutionSum}
 \end{align}
 From Z-Transform of a term in GP 
 \begin{align}
-	X\brak{z}&=	\frac{x\brak{0}}{1-rz^{-1}}  \label{eq:GPTransform} \quad \abs{rz^{-1}}<1
+	X\brak{z}&=	\frac{x\brak{0}}{1-rz^{-1}}  \label{eq:GPTransform} \quad \abs{z} > \abs{r}
 \end{align}
 and Z-Transform of unit step is 
 \begin{align}
 	U\brak{z} &=\frac{1}{1-z^{-1}}  \quad \abs{z^{-1}}<1\\
-	\implies Y\brak{z}&=\brak{\frac{x\brak{0}}{1-rz^{-1}}}\brak{\frac{1}{1-z^{-1}}} \quad \abs{rz^{-1}}<1 \quad \text{and}  \quad \abs{z^{-1}}<1
+	\implies Y\brak{z}&=\brak{\frac{x\brak{0}}{1-rz^{-1}}}\brak{\frac{1}{1-z^{-1}}} \quad \abs{z} > \abs{r} \quad \text{and}  \quad \abs{z}>\abs{1}
 \end{align}
 By using Partial Fractions
 \begin{align}
