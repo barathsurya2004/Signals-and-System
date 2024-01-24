@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.8.25)  24 JAN 2024 13:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.8.25)  24 JAN 2024 13:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1073,13 +1073,13 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 8
 9.
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-)
-No file main.aux.
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 89.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 89.
+
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
@@ -1191,6 +1191,8 @@ LaTeX Info: Redefining \ohm on input line 89.
 Package gensymb Info: Using \textohm for \ohm on input line 89.
 Package gensymb Info: Using \textmu for \micro on input line 89.
 Package hyperref Info: Link coloring OFF on input line 89.
+
+(./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
@@ -1223,43 +1225,13 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 1
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
-)
-
-LaTeX Warning: Reference `eq:sumofapgiven3' on page 1 undefined on input line 1
-09.
-
-
-LaTeX Warning: Reference `eq:sumofapgiven1' on page 1 undefined on input line 1
-09.
-
-
-LaTeX Warning: Reference `eq:sumofapgiven2' on page 1 undefined on input line 1
-09.
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-
-LaTeX Warning: Reference `eq:ztransformofSum' on page 2 undefined on input line
- 160.
-
-[2] (./main.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] (./main.aux)
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29974 strings out of 476091
- 590818 string characters out of 5794081
+ 29980 strings out of 476091
+ 590872 string characters out of 5794081
  1879330 words of memory out of 5000000
  49705 multiletter control sequences out of 15000+600000
  569536 words of font info for 145 fonts, out of 8000000 for 9000
@@ -1272,10 +1244,10 @@ t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
 onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 52332 bytes).
+Output written on main.pdf (2 pages, 51393 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  35 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
