@@ -1,0 +1,140 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide}
+\usepackage{listings}
+\usepackage{tfrupee}
+\DeclareMathOperator*{\Res}{Res}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\prt}[2]{\ensuremath{p_{#1}^{\left(#2\right)} }}        % own macro for this question
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\left\lVert#1\right\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\cond}[2]{#1\middle|#2}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+%\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\providecommand{\rank}{\text{rank}}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+	\newcommand*{\permcomb}[4][0mu]{{{}^{#3}\mkern#1#2_{#4}}}
+\newcommand*{\perm}[1][-3mu]{\permcomb[#1]{P}}
+\newcommand*{\comb}[1][-1mu]{\permcomb[#1]{C}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\gauss}[2]{\mathcal{N}\ensuremath{\left(#1,#2\right)}}
+\providecommand{\diff}[2]{\ensuremath{\frac{d{#1}}{d{#2}}}}
+\providecommand{\myceil}[1]{\left \lceil #1 \right \rceil }
+\newcommand\figref{Fig.~\ref}
+\newcommand\tabref{Table~\ref}
+\newcommand{\sinc}{\,\text{sinc}\,}
+\newcommand{\rect}{\,\text{rect}\,}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Var}{\mathrm{Var}}
+
+
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{EE1205}
+\author{EE22BTECH11014 - Barath Surya M}
+\maketitle
+\section*{Section I}
+\begin{enumerate}
+    \item If $x \in N$ and $\mydet{x+3 & -2 \\ -3x & 2x} = 8$, then find the value of $x$.
+    \item Use elementary column operation $C_2 \rightarrow C_2 + 2C_1$ in the following matrix equation:
+          \begin{align*}
+              \mydet{2 & 1 \\2&1} = \mydet{3&1 \\ 2&0} \mydet{1 & 0\\ -1 & 1}
+          \end{align*}
+    \item Write the number of all possible matrices of order $2\times2$ with each entry 1,2 or 3.
+    \item Write the position vector of the point which divides the join of the point s with position vectors $3\vec{a} - 2\vec{b}$ and $2\vec{a} + 3\vec{b}$ in the ratio 2:1.
+    \item Write the number of vectors of unit lenght perpendicular to both the vector $\vec{a} = 2 \hat{i} + \hat{j} +2\hat{k}$ and $\vec{b}= \hat{j}+\hat{k}$.
+    \item Find the vector equationof the plane with intercepts 3,-4 and 2 on $x,y$ and  $z$-axis respectively.
+    \item Find the coordinates of the point where the line through the points $A\brak{3,4,1}$ and $B\brak{5,1,6}$ crosses the $XZ$ plane. Also find the angle which this line makes with the $XZ$ plane.
+    \item The two adjecent sides of a parallelogram are $2\hat{i}-4\hat{j}-5\hat{k}$ and $2\hat{i}+2\hat{j}+3\hat{k}$. Find the two unit vectors parallel to its diagonals. Using the diagonal vectors, find the area of the parallelogram.
+    \item In a game, a man wins \rupee 5 for getting a number greater than 4 and loses \rupee 1 otherwise, when a fair die is thrown. The man decided to throw a die thrice but to quit as and when he gets a number greater than 4. Find the expected value of the amound he wins/loses.
+    \item A bag contains 4 balls. Two balls are drawn at random \brak{without replacement} and are found to be white. What is the probability that all balls in the bag are white ?
+    \item differentiate $x^{\sin x}+ \brak{\sin x}^{\cos x}$ with respect to x.
+    \item if $y=\cos \brak{\log x} + 2 \sin \brak{\log x}$, prove that $x^2 \frac{d^2 y}{dx^2} + x \frac{dy}{dx} +y =0$.
+    \item If $x=a\sin 2t\brak{1+\cos 2t}$ and $y=b\cos 2t\brak{1-\cos 2t}$, find $\frac{dy}{dx}$ at $t=\frac{\pi}{4}$.
+    \item The equation of tangent at \brak{2,3} on the curve $y^2 = ax^3 + b$ is $y = 4x -5$. Find the values of $a$ and $b$
+    \item Find :$\int \frac{x^2}{x^4 + x^2 -2}dx$.
+    \item Evaluate : $\int_{0}^{\frac{\pi}{2}} \frac{\sin^2 x}{\sin x + \cos x} dx$.
+    \item Evaluate : $\int_{0}^{\frac{3}{2}} \abs{x \cos \pi x}dx$
+    \item Find: $\int \brak{3x +1}\sqrt{4-3x-2x^2} dx$.
+    \item Solve the differential equation : $y+ x\frac{dy}{dx} = x-y\frac{dy}{dx}$.
+    \item Form the differential equation of the family of circles in the second quadrant and touching the coordinate axes.
+    \item Solve the equation for $x: \sin^{-1} x + \sin^{-1}\brak{1-x} = \cos^{-1}x$.
+    \item if $\cos^{-1}\frac{x}{a} + \cos^{-1}\frac{y}{b} = \alpha$, prove that $\frac{x^2}{a^2} -2\frac{xy}{ab}\cos \alpha + \frac{y^2}{b^2} = \sin^2 \alpha$.
+    \item A trust invested some money in two type of bonds. The first bond pays 10\% interest and second bond pays 12\% interest. The trust received \rupee 2,800 as interest. However, if trust had interchanged money in bonds, they would have got \rupee 100 less as interest. Using matrix method, find the amount invested by the trust. Interst received on this amount will be given to Helpage India as donation. Which value is reflected in this question ?
+    \item There are two types of fertilisers "A" and "B". "A" consists of 12\% nitrogen and 5\% phosphoric acid whereas "B" consists of 4\% nitrogen and 5\% phosphoric acid. After testing the soil conditions, farmer finds that he needs at least 12 kg of nitrogen and 12 kg of phosphoric acid for his crops. If "A" costs \rupee 10 per kg and "B" cost \rupee 8 per kg, then graphically determine how much of each type of fertiliser should be used so that nutrient requirements are met at a minimum cost.
+    \item Five bad oranges are accidently mixed with 20 good ones. If four oranges are drawn one by one successively with replacement, then find the probability distribution of number of bad oranges drawn. Hence find the mean and variance of the distribution.
+    \item Find the position vector of the foot of perpendicular and the perpendicular distance from the point $P$ with position vector $2\hat{i}+3\hat{j}+\hat{k}$ to the plane $\vec{r}\cdot\brak{2\hat{i}+\hat{j}+3\hat{k}} - 26=0$. Also find image of P in the plane.
+    \item Show that the binary operation * on $ A=R -\cbrak{-1}$ defined as $a*b= a+b+ab$ for all $a,b \in A$ is commutative and associative on $A$. Also fid the identity element of * in $A$ and prove that every element of $A$ is invertible.
+    \item Prove that the least perimeter of an isosceles triangle in which a circle of radius $r$ can be inscribed is $6 \sqrt{3} r$
+    \item If the sum of lengths of hypotenuse and a side of a right angled triangle is given, show that area of triangle is maximum, when the angle between them is $\frac{\pi}{3}$.
+    \item Prove that the curves $y^2=4x$ and $x^2= 4y$ divide the area of square bounded by $x=0,y=4$ and $y=0$ into three equal parts.
+    \item Using Properties of determinants, show that $\triangle ABC$ is isosceles if :\\
+          \mydet{
+              1&1&1\\
+              1+\cos A & 1+ \cos B & 1+ \cos C\\
+              \cos^2 A + \cos A & \cos^2 B + \cos B & \cos^2 C + \cos C
+          } = 0
+    \item A shopkeeper has 3 varieties of pens 'A', 'B' and 'C'. Meenu purchased 1 pen of each variety for a total of \rupee 21. Jeevan purchased 4 pens of 'A' variety, 3 pens of 'B' variety and 2 pens of 'C' variety for \rupee 60. While Shikha purchased 6 pens of 'A' variety , 2 pens of 'B' variety and 3 pens of 'C' variety for \rupee 70. Using matrix method, find cost of each variety of pen.
+\end{enumerate}
+\end{document}
