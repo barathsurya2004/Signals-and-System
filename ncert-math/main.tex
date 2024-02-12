@@ -118,7 +118,7 @@
 \newcommand*{\comb}[1][-1mu]{\permcomb[#1]{C}}
 \providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
 \providecommand{\gauss}[2]{\mathcal{N}\ensuremath{\left(#1,#2\right)}}
-\providecommand{\diff}[2]{\ensuremath{\frac{d{#1}}{d{#2}}}}
+\providecommand{\diff}[2]{\ensuremath{\dfrac{d{#1}}{d{#2}}}}
 \providecommand{\myceil}[1]{\left \lceil #1 \right \rceil }
 \newcommand{\sinc}{\,\text{sinc}\,}
 \newcommand{\rect}{\,\text{rect}\,}
@@ -138,44 +138,97 @@
             \begin{align*}
                   \myvec{2 & 1 \\2&1} = \myvec{3&1 \\ 2&0} \myvec{1 & 0\\ -1 & 1}
             \end{align*}
-      \item Using elementary row operations find the inverse of matrix $A =\myvec{3&-3&4\\2&-3&4\\0&-1&1}$ and hence solve thr following system of equations $3x-3y+4z=21,2x-3y+4z=20,-y+z=5$.
-      \item Write the number of all possible matrices of order $2\times 3$ with each entry 1 or 2.
-      \item Write the number of all possible matrices of order $2\times2$ with each entry 1,2 or 3.
-      \item A shopkeeper has 3 varieties of pens 'A', 'B' and 'C'. Meenu purchased 1 pen of each variety for a total of \rupee 21. Jeevan purchased 4 pens of 'A' variety, 3 pens of 'B' variety and 2 pens of 'C' variety for \rupee 60. While Shikha purchased 6 pens of 'A' variety , 2 pens of 'B' variety and 3 pens of 'C' variety for \rupee 70. Using matrix method, find cost of each variety of pen.
-      \item if $A=\myvec{1&-2&3\\-4&2&5}$ and $B=\myvec{2&3\\4&5\\2&1}$ and $BA=\brak{b_{ij}}$ find $b_{21} + b_{32}$.
-      \item On her birthday Seema decided to donate some money to children of an orphanage home. If there were 8 children less, every one would have got \rupee 10 more. However, if there were 16 children more, every one would have got \rupee 10 less. Using matrix method, find the number of children and the amount distributed by Seema. What values are reflected by Seema's decision ?
-      \item A trust invested some money in two type of bonds. The first bond pays 10\% interest and second bond pays 12\% interest. The trust received \rupee 2,800 as interest. However, if trust had interchanged money in bonds, they would have got \rupee 100 less as interest. Using matrix method, find the amount invested by the trust. Interst received on this amount will be given to Helpage India as donation. Which value is reflected in this question ?
+      \item Using elementary row operations find the inverse of matrix
+            \begin{align*}
+                  A =\myvec{3 & -3 & 4 \\2&-3&4\\0&-1&1}
+            \end{align*}
+            and hence solve thr following system of equations
+            \begin{align*}
+                  3x-3y+4z & =21 \\
+                  2x-3y+4z & =20 \\
+                  -y+z     & =5.
+            \end{align*}
+      \item Write the number of all possible matrices of order $2\times 3$ with each entry $1$ or $2$.
+      \item Write the number of all possible matrices of order $2\times2$ with each entry $1,2$ or $3$.
+      \item A shopkeeper has $3$ varieties of pens $A$, $B$ and $C$. Meenu purchased $1$ pen of each variety for a total of \rupee $21$. Jeevan purchased $4$ pens of $A$ variety, $3$ pens of $B$ variety and $2$ pens of $C$ variety for \rupee $60$. While Shikha purchased $6$ pens of $A$ variety , $2$ pens of $B$ variety and $3$ pens of $C$ variety for \rupee $70$. Using matrix method, find cost of each variety of pen.
+      \item If
+            \begin{align*}
+                  A=\myvec{1 & -2 & 3 \\-4&2&5}
+            \end{align*}
+            and
+            \begin{align*}
+                  B=\myvec{2 & 3 \\4&5\\2&1}
+            \end{align*}
+            and
+            \begin{align*}
+                  BA=\brak{b_{ij}}
+            \end{align*}
+            find $b_{21} + b_{32}$.
+      \item On her birthday Seema decided to donate some money to children of an orphanage home. If there were $8$ children less, every one would have got \rupee $10$ more. However, if there were $16$ children more, every one would have got \rupee $10$ less. Using matrix method, find the number of children and the amount distributed by Seema. What values are reflected by Seema's decision ?
+      \item A trust invested some money in two type of bonds. The first bond pays $10$\% interest and second bond pays $12$\% interest. The trust received \rupee $2,800$ as interest. However, if trust had interchanged money in bonds, they would have got \rupee $100$ less as interest. Using matrix method, find the amount invested by the trust. Interst received on this amount will be given to Helpage India as donation. Which value is reflected in this question ?
             \section{Determinants}
-      \item Solve for x: \mydet{a+x & a-x &a-x\\a-x&a+x& a-x\\a-x & a-x & a+x} =0 , using properties of determinants.
-      \item If $x \in N$ and $\mydet{x+3 & -2 \\ -3x & 2x} = 8$, then find the value of $x$.
+      \item Solve for x:
+            \begin{align*}
+                  \mydet{a+x & a-x & a-x \\a-x&a+x& a-x\\a-x & a-x & a+x} &=0
+            \end{align*}
+            using properties of determinants.
+      \item If $x \in N$ and
+            \begin{align*}
+                  \mydet{x+3 & -2 \\ -3x & 2x} &= 8
+            \end{align*}
+            then find the value of $x$.
 
-      \item Using Properties of determinants, show that $\triangle ABC$ is isosceles if :\\
-            \mydet{
-                  1&1&1\\
-                  1+\cos A & 1+ \cos B & 1+ \cos C\\
-                  \cos^2 A + \cos A & \cos^2 B + \cos B & \cos^2 C + \cos C
-            } = 0
+      \item Using Properties of determinants, show that $\triangle ABC$ is isosceles if :
+            \begin{align*}
+                  \mydet{
+                  1                 & 1                 & 1                       \\
+                  1+\cos A          & 1+ \cos B         & 1+ \cos C               \\
+                  \cos^2 A + \cos A & \cos^2 B + \cos B & \cos^2 C + \cos C} & =0
+            \end{align*}
       \item Write the value of
             \mydet{a-b & b-c & c-a \\
                   b-c & c-a & a-b\\
                   c-a & a-b & b-c
             }.
             \section{Vectors}
-      \item Find the coordinates of the foot of perpendicular and perpendicular distance from the point $P\brak{4, 3, 2}$ to the plane $x+2y+3z=2$. Also find the image of $P$ in the plane.
-      \item Find the angle between the vectors $\vec{a} + \vec{b}$ and $\vec{a}-\vec{b}$ if $\vec{a}=2\hat{i}-\hat{j}+3\hat{k}$ and $\vec{b}= 3\hat{i} + \hat{j} -2\hat{k}$, and hence find a vector perpendicular to both $\vec{a}+\vec{b}$ and $\vec{a}-\vec{b}$.
-      \item if $\abs{\vec{a}} = 4 , \abs{\vec{b}}=3$  and $\vec{a}.\vec{b}=6\sqrt{3}$, then find the value of $\abs{\vec{a}\times \vec{b}}$.
-      \item find the position vector of the point which divides the join of points with position vectors $\vec{a}+3\vec{b}$ and $\vec{a}-\vec{b}$ internally in the ratio 1:3.
-      \item Write the position vector of the point which divides the join of the point s with position vectors $3\vec{a} - 2\vec{b}$ and $2\vec{a} + 3\vec{b}$ in the ratio 2:1.
-      \item Write the number of vectors of unit lenght perpendicular to both the vector $\vec{a} = 2 \hat{i} + \hat{j} +2\hat{k}$ and $\vec{b}= \hat{j}+\hat{k}$.
-      \item Find the vector equationof the plane with intercepts 3,-4 and 2 on $x,y$ and  $z$-axis respectively.
+      \item Find the coordinates of the foot of perpendicular and perpendicular distance from the point $P\brak{4, 3, 2}$ to the plane
+            \begin{align*}
+                  x+2y+3z=2
+            \end{align*}
+            Also find the image of $P$ in the plane.
+      \item Find the angle between the vectors $\vec{a} + \vec{b}$ and $\vec{a}-\vec{b}$ if
+            \begin{align*}
+                  \vec{a}=2\hat{i}-\hat{j}+3\hat{k}
+            \end{align*}
+            and
+            \begin{align*}
+                  \vec{b}= 3\hat{i} + \hat{j} -2\hat{k}
+            \end{align*}
+            and hence find a vector perpendicular to both $\vec{a}+\vec{b}$ and $\vec{a}-\vec{b}$.
+      \item If  $\abs{\vec{a}} = 4 , \abs{\vec{b}}=3$  and $\vec{a}.\vec{b}=6\sqrt{3}$, then find the value of $\abs{\vec{a}\times \vec{b}}$.
+      \item Find the position vector of the point which divides the join of points with position vectors $\vec{a}+3\vec{b}$ and $\vec{a}-\vec{b}$ internally in the ratio $1:3$.
+      \item Write the position vector of the point which divides the join of the point s with position vectors $3\vec{a} - 2\vec{b}$ and $2\vec{a} + 3\vec{b}$ in the ratio $2:1$.
+      \item Write the number of vectors of unit lenght perpendicular to both the vector
+            \begin{align*}
+                  \vec{a} = 2 \hat{i} + \hat{j} +2\hat{k}
+            \end{align*}
+            and
+            \begin{align*}
+                  \vec{b}= \hat{j}+\hat{k}.
+            \end{align*}
+      \item Find the vector equationof the plane with intercepts $3,-4$ and $2$ on $x,y$ and  $z$-axis respectively.
       \item Find the coordinates of the point where the line through the points $A\brak{3,4,1}$ and $B\brak{5,1,6}$ crosses the $XZ$ plane. Also find the angle which this line makes with the $XZ$ plane.
       \item The two adjecent sides of a parallelogram are $2\hat{i}-4\hat{j}-5\hat{k}$ and $2\hat{i}+2\hat{j}+3\hat{k}$. Find the two unit vectors parallel to its diagonals. Using the diagonal vectors, find the area of the parallelogram.
-      \item Find the position vector of the foot of perpendicular and the perpendicular distance from the point $P$ with position vector $2\hat{i}+3\hat{j}+\hat{k}$ to the plane $\vec{r}\cdot\brak{2\hat{i}+\hat{j}+3\hat{k}} - 26=0$. Also find image of P in the plane.
+      \item Find the position vector of the foot of perpendicular and the perpendicular distance from the point $P$ with position vector $2\hat{i}+3\hat{j}+\hat{k}$ to the plane
+            \begin{align*}
+                  \vec{r}\cdot\brak{2\hat{i}+\hat{j}+3\hat{k}} - 26=0
+            \end{align*}
+            Also find image of $P$ in the plane.
             \section{Probability}
-      \item A, B and C throw a pair of dice in that order alternately till one of them gets a total of 9 and wins the game. Find their respective probabilities of winning, if A starts first.
+      \item $A, B$ and $C$ throw a pair of dice in that order alternately till one of them gets a total of $9$ and wins the game. Find their respective probabilities of winning, if $A$ starts first.
       \item A random variable $X$ has the following probability distribution :
-            \begin{center}
-                  \begin{table}[h!]
+            \begin{table}[h!]
+                  \begin{center}
                         \begin{tabular}{|c |c| c | c | c | c | c | c |}
                               \hline
                               X        & 0   & 1    & 2    & 3    & 4     & 5      & 6         \\
@@ -183,62 +236,139 @@
                               $\pr{X}$ & $C$ & $2C$ & $2C$ & $3C$ & $C^2$ & $2C^2$ & $7C^2 +C$ \\
                               \hline
                         \end{tabular}
-                  \end{table}
-            \end{center}
-            Find the value of C and also calculate mean of the distribution.
-      \item A committee of 4 students is selected at random from a group consisting of 7 boys and 4 girls. Find the probability that there are exactly 2 boys in the committee, given that at least one girl must be there in the committee.
-      \item Five bad oranges are accidently mixed with 20 good ones. If four oranges are drawn one by one successively with replacement, then find the probability distribution of number of bad oranges drawn. Hence find the mean and variance of the distribution.
-      \item In a game, a man wins \rupee 5 for getting a number greater than 4 and loses \rupee 1 otherwise, when a fair die is thrown. The man decided to throw a die thrice but to quit as and when he gets a number greater than 4. Find the expected value of the amound he wins/loses.
-      \item A bag contains 4 balls. Two balls are drawn at random \brak{without replacement} and are found to be white. What is the probability that all balls in the bag are white ?
+                  \end{center}
+            \end{table}
+            Find the value of $C$ and also calculate mean of the distribution.
+      \item A committee of $4$ students is selected at random from a group consisting of $7$ boys and $4$ girls. Find the probability that there are exactly $2$ boys in the committee, given that at least one girl must be there in the committee.
+      \item Five bad oranges are accidently mixed with $20$ good ones. If four oranges are drawn one by one successively with replacement, then find the probability distribution of number of bad oranges drawn. Hence find the mean and variance of the distribution.
+      \item In a game, a man wins \rupee $5$ for getting a number greater than $4$ and loses \rupee $1$ otherwise, when a fair die is thrown. The man decided to throw a die thrice but to quit as and when he gets a number greater than $4$. Find the expected value of the amound he wins/loses.
+      \item A bag contains $4$ balls. Two balls are drawn at random \brak{\text{without replacement}} and are found to be white. What is the probability that all balls in the bag are white ?
             \section{Differentiation}
-      \item if $x=e^{\cos 2t}$ and $y=e^{\sin 2t}$, prove that $\frac{dy}{dx}= -\frac{y \log x}{x \log y}$.
-      \item differentiate $x^{\sin x}+ \brak{\sin x}^{\cos x}$ with respect to x.
-      \item if $y=\cos \brak{\log x} + 2 \sin \brak{\log x}$, prove that $x^2 \frac{d^2 y}{dx^2} + x \frac{dy}{dx} +y =0$.
-      \item If $x=a\sin 2t\brak{1+\cos 2t}$ and $y=b\cos 2t\brak{1-\cos 2t}$, find $\frac{dy}{dx}$ at $t=\frac{\pi}{4}$.
+      \item If $x=e^{\cos 2t}$ and $y=e^{\sin 2t}$, prove that
+            \begin{align*}
+                  \dfrac{dy}{dx}= -\dfrac{y \log x}{x \log y}
+            \end{align*}
+      \item Differentiate $x^{\sin x}+ \brak{\sin x}^{\cos x}$ with respect to x.
+      \item If
+            \begin{align*}
+                  y=\cos \brak{\log x} + 2 \sin \brak{\log x}
+            \end{align*}
+            prove that
+            \begin{align*}
+                  x^2 \dfrac{d^2 y}{dx^2} + x \dfrac{dy}{dx} +y =0
+            \end{align*}
+      \item If
+            \begin{align*}
+                  x=a\sin 2t\brak{1+\cos 2t}
+            \end{align*}
+            and
+            \begin{align*}
+                  y=b\cos 2t\brak{1-\cos 2t}
+            \end{align*}
+            find $\dfrac{dy}{dx}$ at $t=\dfrac{\pi}{4}$.
       \item Form the differential equation of the family of circles in the second quadrant and touching the coordinate axes.
             \section{Integraion}
-      \item Evaluate : $\int_{0}^{\frac{3}{2}} \abs{x \cos \pi x}dx$
-      \item Find: $\int \brak{3x +1}\sqrt{4-3x-2x^2} dx$.
-      \item Using integration, find the area of the triangle formed by negative x-axis and tangent and normal to the circle $x^2 + y^2 =9$ at \brak{-1,2\sqrt{2}}
-      \item Solve the differential equation $x\frac{dy}{dx} +y -x +xy \cot x= 0; x\neq 0$.
-      \item Solve the differential equation: $\brak{x^2+3xy+y^2}dx -x^2dy = 0$ given that $y=0$, when $x=1$.
-      \item Find : $\int \brak{3x+5}\sqrt{5+4x-2x^2}dx$.
-      \item Find : $\int \frac{2x+1}{\brak{x^2+1}\brak{x^2+4}}dx$.
-      \item Evaluate : $\int_{0}^{\pi}\frac{x\sin x}{1+3\cos^2 x}dx$.
-      \item Evaluate : $\int_{1}^{5}\cbrak{\abs{x-1}+\abs{x-2}+\abs{x-3}}dx$.
-      \item Find :$\int \frac{x^2}{x^4 + x^2 -2}dx$.
-      \item Evaluate : $\int_{0}^{\frac{\pi}{2}} \frac{\sin^2 x}{\sin x + \cos x} dx$.
-      \item Solve the differential equation : $y+ x\frac{dy}{dx} = x-y\frac{dy}{dx}$.
+      \item Evaluate : $\int_{0}^{\dfrac{3}{2}} \abs{x \cos \pi x}\,dx$
+      \item Find: $\int \brak{3x +1}\sqrt{4-3x-2x^2} \,dx$.
+      \item Using integration, find the area of the triangle formed by negative $x$-axis and tangent and normal to the circle
+            \begin{align*}
+                  x^2 + y^2 =9
+            \end{align*}
+            at \brak{-1,2\sqrt{2}}
+      \item Solve the differential equation
+            \begin{align*}
+                  x\dfrac{dy}{dx} +y -x +xy \cot x= 0, \quad x\neq 0
+            \end{align*}
+      \item Solve the differential equation:
+            \begin{align*}
+                  \brak{x^2+3xy+y^2}dx -x^2dy = 0
+            \end{align*}
+            given that $y=0$, when $x=1$.
+      \item Find : $\int \brak{3x+5}\sqrt{5+4x-2x^2}\,dx$.
+      \item Find : $\int \dfrac{2x+1}{\brak{x^2+1}\brak{x^2+4}}\,dx$.
+      \item Evaluate : $\int_{0}^{\pi}\dfrac{x\sin x}{1+3\cos^2 x}\,dx$.
+      \item Evaluate : $\int_{1}^{5}\cbrak{\abs{x-1}+\abs{x-2}+\abs{x-3}}\,dx$.
+      \item Find :$\int \dfrac{x^2}{x^4 + x^2 -2}\,dx$.
+      \item Evaluate : $\int_{0}^{\frac{\pi}{2}} \dfrac{\sin^2 x}{\sin x + \cos x} \,dx$.
+      \item Solve the differential equation :
+            \begin{align*}
+                  y+ x\dfrac{dy}{dx} = x-y\dfrac{dy}{dx}
+            \end{align*}
             \section{Trigonometry}
-      \item Show that height of the cylinder of greatest volume which can be inscribed in a right circular cone of height h and semi-vertical angle $\alpha$ is one-third that of the cone and the greatest volume of the cylinder is $\frac{4}{27} \pi h^3 \tan^2 \alpha$.
-      \item prove that $2\sin^{-1}\brak{\frac{3}{5}}-\tan^{-1}\brak{\frac{17}{31}}=\frac{\pi}{4}$
-      \item solve for x : $\tan^{-1}\brak{\frac{2-x}{2+x}}=\frac{1}{2} \tan^{-1}\brak{\frac{x}{2}},x>0$.
+      \item Show that height of the cylinder of greatest volume which can be inscribed in a right circular cone of height h and semi-vertical angle $\alpha$ is one-third that of the cone and the greatest volume of the cylinder is $\dfrac{4}{27} \pi h^3 \tan^2 \alpha$.
+      \item Prove that
+            \begin{align*}
+                  2\sin^{-1}\brak{\dfrac{3}{5}}-\tan^{-1}\brak{\dfrac{17}{31}}=\dfrac{\pi}{4}
+            \end{align*}
+      \item Solve for $x$ :
+            \begin{align*}
+                  \tan^{-1}\brak{\dfrac{2-x}{2+x}}=\dfrac{1}{2} \tan^{-1}\brak{\dfrac{x}{2}},\quad x>0
+            \end{align*}
 
-      \item Solve the equation for $x: \sin^{-1} x + \sin^{-1}\brak{1-x} = \cos^{-1}x$.
-      \item if $\cos^{-1}\frac{x}{a} + \cos^{-1}\frac{y}{b} = \alpha$, prove that $\frac{x^2}{a^2} -2\frac{xy}{ab}\cos \alpha + \frac{y^2}{b^2} = \sin^2 \alpha$.
+      \item Solve the equation for
+            \begin{align*}
+                  x: \sin^{-1} x + \sin^{-1}\brak{1-x} = \cos^{-1}x
+            \end{align*}
+      \item If
+            \begin{align*}
+                  \cos^{-1}\dfrac{x}{a} + \cos^{-1}\dfrac{y}{b} = \alpha
+            \end{align*}
+            prove that
+            \begin{align*}
+                  \dfrac{x^2}{a^2} -2\dfrac{xy}{ab}\cos \alpha + \dfrac{y^2}{b^2} = \sin^2 \alpha
+            \end{align*}
             \section{Geometry}
-      \item Show that the lines $\frac{x-1}{3}= \frac{y-1}{-1} = \frac{z+1}{0}$ and $\frac{x-4}{2}= \frac{y}{0} = \frac{z+1}{3}$ intersect. Find their point of intersection.
-      \item Find the equation of the tangent line to the curve $y=\sqrt{5x-3} -5$, which is parallel to line $4x-2y+5=0$.
-      \item Write the coordinates fo the point whcih is the reflection of the point \brak{\alpha,\beta,\gamma} in the $XZ$-plane.
-      \item The equation of tangent at \brak{2,3} on the curve $y^2 = ax^3 + b$ is $y = 4x -5$. Find the values of $a$ and $b$
+      \item Show that the lines
+            \begin{align*}
+                  \dfrac{x-1}{3}= \dfrac{y-1}{-1} = \dfrac{z+1}{0}
+            \end{align*}
+            and
+            \begin{align*}
+                  \dfrac{x-4}{2}= \dfrac{y}{0} = \dfrac{z+1}{3}
+            \end{align*}
+            intersect. Find their point of intersection.
+      \item Find the equation of the tangent line to the curve $y=\sqrt{5x-3} -5$, which is parallel to line
+            \begin{align*}
+                  4x-2y+5=0
+            \end{align*}
+      \item Write the coordinates fo the point which is the reflection of the point \brak{\alpha,\beta,\gamma} in the $XZ$-plane.
+      \item The equation of tangent at \brak{2,3} on the curve
+            \begin{align*}
+                  y^2 = ax^3 + b
+            \end{align*}
+            is
+            \begin{align*}
+                  y = 4x -5
+            \end{align*}
+            Find the values of $a$ and $b$
       \item Prove that the least perimeter of an isosceles triangle in which a circle of radius $r$ can be inscribed is $6 \sqrt{3} r$
-      \item If the sum of lengths of hypotenuse and a side of a right angled triangle is given, show that area of triangle is maximum, when the angle between them is $\frac{\pi}{3}$.
+      \item If the sum of lengths of hypotenuse and a side of a right angled triangle is given, show that area of triangle is maximum, when the angle between them is $\dfrac{\pi}{3}$.
       \item Prove that the curves $y^2=4x$ and $x^2= 4y$ divide the area of square bounded by $x=0,y=4$ and $y=0$ into three equal parts.
             \section{Funtions}
-      \item Find the intervals in which the function $f\brak{x}= \frac{4\sin x}{2+\cos x} -x ; 0 \leq x \leq 2\pi$ is strictly increasing or strictly decreasing.
-      \item Verify Mean Value theroem for the function $f\brak{x}= 2\sin x + \sin 2x$ on $\sbrak{0,\pi}$.
-      \item Show that the binary operation * on $ A=R -\cbrak{-1}$ defined as $a*b= a+b+ab$ for all $a,b \in A$ is commutative and associative on $A$. Also fid the identity element of * in $A$ and prove that every element of $A$ is invertible.\item Show that the function $f$ given by :
+      \item Find the intervals in which the function
+            \begin{align*}
+                  f\brak{x}= \dfrac{4\sin x}{2+\cos x} -x,\quad 0 \leq x \leq 2\pi
+            \end{align*}
+            is strictly increasing or strictly decreasing.
+      \item Verify Mean Value theroem for the function
+            \begin{align*}
+                  f\brak{x}= 2\sin x + \sin 2x
+            \end{align*}
+            on $\sbrak{0,\pi}$.
+      \item Show that the binary operation $*$ on $ A=R -\cbrak{-1}$ defined as
+            \begin{align*}
+                  a*b= a+b+ab
+            \end{align*}
+            for all $a,b \in A$ is commutative and associative on $A$. Also fid the identity element of $*$ in $A$ and prove that every element of $A$ is invertible.\item Show that the function $f$ given by :
             \begin{align*}
                   f\brak{x} = \begin{cases}
-                                    \frac{e^{\frac{1}{x}}-1}{e^{\frac{1}{x}}+1} ,\quad \text{if} x\neq 0 \\
+                                    \dfrac{e^{\frac{1}{x}}-1}{e^{\frac{1}{x}}+1} ,\quad \text{if} x\neq 0 \\
                                     -1,\quad \text{ if } x=0
                               \end{cases}
             \end{align*}
             is discontinuous at $x=0$.
             \section{Optimization}
-      \item There are two types of fertilisers "A" and "B". "A" consists of 12\% nitrogen and 5\% phosphoric acid whereas "B" consists of 4\% nitrogen and 5\% phosphoric acid. After testing the soil conditions, farmer finds that he needs at least 12 kg of nitrogen and 12 kg of phosphoric acid for his crops. If "A" costs \rupee 10 per kg and "B" cost \rupee 8 per kg, then graphically determine how much of each type of fertiliser should be used so that nutrient requirements are met at a minimum cost.
-
-
-      \item A company manufactures two types of cardigans : type A and type B. It costs \rupee 360 to make a type A cardigan and \rupee 120 to make a type B cardigan. The company can make at most 300 cardigans and spend at most \rupee 72,000 a day. The number of cardigans of type B cannot exceed the number of cardigans of type A by more than 200. The company makes a profit of \rupee 100 for each cardigan of type A and \rupee 50 for every cardigan of type B. Formulate this problem as a linear programming problem to maximise the profit to the company. Solve it graphically and find maximum profit.
+      \item There are two types of fertilisers $A$ and $B$. $A$ consists of $12$\% nitrogen and $5$\% phosphoric acid whereas $B$ consists of $4$\% nitrogen and $5$\% phosphoric acid. After testing the soil conditions, farmer finds that he needs at least $12$ kg of nitrogen and $12$ kg of phosphoric acid for his crops. If $A$ costs \rupee $10$ per kg and $B$ cost \rupee $8$ per kg, then graphically determine how much of each type of fertiliser should be used so that nutrient requirements are met at a minimum cost.
+      \item A company manufactures two types of cardigans : type $A$ and type $B$. It costs \rupee $360$ to make a type $A$ cardigan and \rupee $120$ to make a type $B$ cardigan. The company can make at most $300$ cardigans and spend at most \rupee $72,000$ a day. The number of cardigans of type $B$ cannot exceed the number of cardigans of type $A$ by more than $200$. The company makes a profit of \rupee $100$ for each cardigan of type $A$ and \rupee $50$ for every cardigan of type $B$. Formulate this problem as a linear programming problem to maximise the profit to the company. Solve it graphically and find maximum profit.
 \end{enumerate}
 \end{document}
