@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.8.25)  12 FEB 2024 06:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2023.8.25)  12 FEB 2024 10:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -864,26 +864,26 @@ LaTeX Font Info:    Font shape `OT1/txr/b/n' in size <17.28> not available
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (3.51466pt too wide) in paragraph at lines 168--169
+Overfull \hbox (3.51466pt too wide) in paragraph at lines 162--163
 \OT1/txr/m/n/12 have got \U/tfrupee/m/n/12 |$\OT1/txr/m/n/12 100$ less as in-ter-est. Us-ing ma-trix method, find the amount in-vested
  []
 
 [2] [3] [4]
-Overfull \hbox (4.87071pt too wide) in paragraph at lines 243--244
+Overfull \hbox (4.87071pt too wide) in paragraph at lines 231--232
 \OT1/txr/m/n/12 are drawn one by one suc-ces-sively with re-place-ment, then find the prob-a-bil-ity
  []
 
 
-Overfull \hbox (3.22598pt too wide) in paragraph at lines 245--246
+Overfull \hbox (3.22598pt too wide) in paragraph at lines 233--234
 []\OT1/txr/m/n/12 A bag con-tains $4$ balls. Two balls are drawn at ran-dom $[]$
  []
 
-[5] [6] [7] [8]
-Overfull \hbox (0.1226pt too wide) in paragraph at lines 334--335
+[5] [6] [7]
+Overfull \hbox (0.1226pt too wide) in paragraph at lines 313--314
 []\OT1/txr/m/n/12 Write the co-or-di-nates fo the point which is the re-flec-tion of the point $[]$
  []
 
-[9] [10] (./main.aux)
+[8] [9] [10] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: CF20F4C8904365BC68B9F519062F6914;947.
  ) 
@@ -894,9 +894,9 @@ Here is how much of TeX's memory you used:
  49578 multiletter control sequences out of 15000+600000
  554150 words of font info for 138 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,17n,104p,696b,1044s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 102i,17n,104p,719b,1044s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tfrupee/tfrupee.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (10 pages, 172931 bytes).
+Output written on main.pdf (10 pages, 172893 bytes).
 PDF statistics:
  229 PDF objects out of 1000 (max. 8388607)
  195 compressed objects within 2 object streams
